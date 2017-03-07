@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout_fragmentnews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="scrollable"
+        app:tabBackground="@color/colorPrimary"
+        app:tabSelectedTextColor="@color/colorAccent"
+        app:tabTextColor="@android:color/white"
+        app:tabIndicatorColor="@color/colorAccent"
+        ></android.support.design.widget.TabLayout>
+    <!--Tablayout:导航用的，材料设计库下面的，degin下面的，已经导过了,
+    放在这个库是因为需要兼容更多版本
+    tabIndicatorColor:indicat:指示器
+    tab下面的指示器有个横线，选到哪个界面哪个界面下面会有个横线
+    tabBackground:背景颜色
+    tabSelectedTextColor:选中的时候的汉字的颜色
+    tabTextColor:汉字没被选中的时候的颜色
+    tabMode:导航栏的样式：fixd:充满(如果要用此属性tabGravity="center"一起使用，需要结合)
+                         scrollable：可以左右滑动的-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_fragmentnews"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></android.support.v4.view.ViewPager>
+
+</LinearLayout>

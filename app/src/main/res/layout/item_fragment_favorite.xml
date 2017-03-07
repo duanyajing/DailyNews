@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_item_favoritepic"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/tv_item_favoritenewsdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:padding="2dp"
+        android:text="data"
+        android:layout_alignBottom="@+id/iv_item_favoritepic"
+        android:layout_toEndOf="@+id/iv_item_favoritepic" />
+
+    <TextView
+        android:id="@+id/tv_item_favoritetitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:textSize="15sp"
+        android:maxLines="1"
+        android:padding="2dp"
+        android:layout_above="@+id/tv_item_favoritenewsdata"
+        android:layout_toEndOf="@+id/iv_item_favoritepic" />
+
+    <TextView
+        android:id="@+id/tv_item_favoritedata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:padding="2dp"
+        android:text="收藏时间"
+        android:layout_marginEnd="71dp"
+        android:layout_below="@+id/tv_item_favoritetitle"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

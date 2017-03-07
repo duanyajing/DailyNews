@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+        <!--使用V7包下的toolbar：为了兼容低版本-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/Theme.AppCompat.Light">
+        </android.support.v7.widget.Toolbar>
+
+        <!--
+         xmlns:app="http://schemas.android.com/apk/res-auto"
+         作用：声明引用app属性
+         app:theme：对应的值指定了让Toolbar单独使用深色主题，toolbar上的其他元素使用浅色主题
+         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"：
+         主题是深颜色，字体是浅颜色的属性
+         app:popupTheme="@style/Theme.AppCompat.Light":
+         上面的属性谈出来的是一个popuwindow（MD-Material Design:材料设计，这些属性都是5.0的新特性，材料设计），
+         也就是三个点出来的类似于微信中一些东西
+         此条属性就是设置那个为浅色-->
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fl_commcontent_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+</LinearLayout>

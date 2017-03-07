@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginpage"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28.0dip"
+        android:layout_marginRight="28.0dip"
+        android:layout_marginTop="190.0dip"
+        android:text="欢迎使用TopNews"
+        android:textColor="#b4aeae"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_marginLeft="28.0dip"
+        android:layout_marginRight="28.0dip"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_marginLeft="1.0px"
+            android:layout_marginRight="1.0px"
+            android:background="#ffc0c3c4" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/wenxin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input"
+        android:layout_marginLeft="28.0dip"
+        android:layout_marginRight="28.0dip"
+        android:layout_marginTop="12.0dip"
+        android:background="#478e8e8e"
+        android:gravity="center"
+        android:paddingTop="5.0dip"
+        android:text="微信登录"
+        android:textColor="#ff333333"
+        android:textSize="18.0sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/QQ"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wenxin"
+        android:layout_marginLeft="28.0dip"
+        android:layout_marginRight="28.0dip"
+        android:layout_marginTop="12.0dip"
+        android:background="#470015ff"
+        android:gravity="center"
+        android:paddingTop="5.0dip"
+        android:text="QQ  登  录"
+        android:textColor="#ff333333"
+        android:textSize="18.0sp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/QQ"
+        android:layout_marginLeft="30.0dip"
+        android:layout_marginRight="30.0dip"
+        android:layout_marginTop="8.0dip"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/regist"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:background="#0022ff"
+            android:clickable="true"
+            android:gravity="left|center"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:text="注册账号>"
+            android:textColor="#ffffffff"
+            android:textSize="15.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#0022ff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/more"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:paddingBottom="8.0dip"
+            android:paddingTop="8.0dip">
+
+            <TextView
+                android:id="@+id/more_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="更多登录选项"
+                android:textColor="#ffc6e6f9"
+                android:textSize="14.0sp" />
+
+            <ImageView
+                android:id="@+id/more_image"
+                android:layout_width="20dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/more_text"
+                android:clickable="false" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/moremenu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="#ff005484" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:background="#ff0883cb" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginRight="30.0dip"
+                android:layout_marginTop="12.0dip"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/hide_login"
+                    android:layout_width="1.0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.0"
+                    android:background="@null"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawablePadding="4.0dip"
+                    android:text="设置"
+                    android:textColor="#ffc6e6f9"
+                    android:textSize="12.0sp" />
+
+                <CheckBox
+                    android:id="@+id/silence_login"
+                    android:layout_width="1.0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawablePadding="4.0dip"
+                    android:text="关于"
+                    android:textColor="#ffc6e6f9"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18.0dip"
+                android:layout_marginLeft="30.0dip"
+                android:layout_marginRight="30.0dip"
+                android:layout_marginTop="18.0dip"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/accept_accounts"
+                    android:layout_width="1.0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.0"
+                    android:background="@null"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawablePadding="4.0dip"
+                    android:text="重置密码"
+                    android:textColor="#ffc6e6f9"
+                    android:textSize="12.0sp" />
+
+                <CheckBox
+                    android:id="@+id/accept_troopmsg"
+                    android:layout_width="1.0px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:background="@null"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawablePadding="4.0dip"
+                    android:text="版本升级"
+                    android:textColor="#ffc6e6f9"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/more"
+        android:icon="@android:drawable/star_on"
+        app:showAsAction="always"
+        android:title="收藏"/>
+    <item
+        android:id="@+id/search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always"
+        android:title="搜索"/>
+
+    <item
+        android:id="@+id/help"
+        android:icon="@android:drawable/ic_menu_help"
+        app:showAsAction="ifRoom"
+        android:title="帮助"/>
+
+
+    <item
+        android:id="@+id/comment"
+        android:icon="@android:drawable/ic_menu_more"
+        app:showAsAction="ifRoom"
+        android:title="评论"/>
+
+    <item
+        android:id="@+id/share"
+        android:icon="@android:drawable/ic_menu_share"
+        app:showAsAction="always"
+        android:title="分享"/>
+
+
+
+<!--showAsAction:always:一直占用，不管
+ifRoom:根据实际情况，never不显示
+title显示的时间-->
+</menu>

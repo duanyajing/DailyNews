@@ -1,0 +1,1 @@
+include ':app', ':FragmentTest', ':RecyclerViewTest', ':ImageLoaderTest'
